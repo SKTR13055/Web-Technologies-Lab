@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student CGPA Calculator</title>
+</head>
+<body>
+
+  <script>
+    // Function to calculate CGPA
+    function calculateCGPA() {
+      var numSemesters = parseInt(prompt('Enter the number of semesters:'));
+      
+      // Validate input
+      if (isNaN(numSemesters) || numSemesters <= 0) {
+        alert('Please enter a valid number of semesters.');
+        return;
+      }
+
+      var totalGradePoints = 0;
+
+      for (var i = 1; i <= numSemesters; i++) {
+        var grade = parseFloat(prompt(`Enter grade for Semester ${i} (on a 10-point scale):`));
+
+        // Validate input
+        if (isNaN(grade) || grade < 0 || grade > 10) {
+          alert('Please enter valid grades (0-10) for all semesters.');
+          return;
+        }
+
+        totalGradePoints += grade;
+      }
+
+      // Calculate CGPA
+      var cgpa = totalGradePoints / numSemesters;
+
+      // Display result
+      var result = `Total Grade Points for ${numSemesters} semesters: ${totalGradePoints}\nCGPA: ${cgpa.toFixed(2)}`;
+      alert(result);
+    }
+  </script>
+
+  <h2>Student CGPA Calculator</h2>
+
+  <button onclick="calculateCGPA()">Calculate CGPA</button>
+
+</body>
+</html>

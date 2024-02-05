@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #cf5518;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .book {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .book img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+
+        .book-details {
+            flex-grow: 1;
+        }
+
+        footer {
+            background-color: #3fab09;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Online Bookstore</h1>
+    </header>
+
+    <section>
+        <h2>Featured Books</h2>
+
+        <div class="book">
+            <img src="https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/31dU5sjvz8L.jpg" alt="Book 1">
+            <div class="book-details">
+                <h3>The 48 laws of Power</h3>
+                <p>Author: Robert Greene</p>
+                <p>Price: $19.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="book">
+            <img src="https://embed.cdn.pais.scholastic.com/v1/channels/sso/products/identifiers/isbn/9781338134377/alternate/3/renditions/500" alt="Book 2">
+            <div class="book-details">
+                <h3>Five Nights at Freddy's:The Silver Eyes</h3>
+                <p>Author: Scott Cawthon</p>
+                <p>Price: $24.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        &copy; 2023 Online Bookstore. All rights reserved.
+    </footer>
+
+</body>
+</html>
