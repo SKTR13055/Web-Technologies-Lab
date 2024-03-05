@@ -15,7 +15,7 @@ function readHtmlFile(filePath) {
 }
 
 // Define the path to the HTML file
-const htmlFilePath = 'Online_Bookstore.html';
+const htmlFilePath = 'Online_Bookstore.html'; //You can change it to any file according to your desire
 
 // Read the HTML file and log its content
 const htmlContent = readHtmlFile(htmlFilePath);
